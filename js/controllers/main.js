@@ -1,9 +1,4 @@
-angular.module("Clt").controller("Main", function($scope, $window){
-
-  $scope.appTitle = "DeMolay PB"
-  $scope.icons = {
-      menu: "reorder"
-  }
+angular.module("Clt").controller("Clt", function($scope, $window){
 
   $scope.artigos = [
     {
@@ -23,7 +18,7 @@ angular.module("Clt").controller("Main", function($scope, $window){
     {
       num: '47-A',
       antigo:{
-        descricao: "",
+        descricao: "Artigo Inexistente",
         paragrafos: []},
       novo:{
         descricao: "Na hipótese de não serem informados os dados a que se refere o parágrafo único do art.41 , o empregador ficará sujeito à multa de R$ 1.000,00 (mil reais) por empregado prejudicado",
@@ -55,7 +50,7 @@ angular.module("Clt").controller("Main", function($scope, $window){
     {
       num: '523-A',
       antigo:{
-        descricao: "",
+        descricao: "Artigo Inexistente",
         paragrafos: []},
       novo:{
         descricao: "É assegurada a eleição de representante dos trabalhadores no local de trabalho, observados os seguintes critérios: I - um representante dos empregados poderá ser escolhido quando a empresa possuir mais de duzentos empregados, conforme disposto n o art.11 da Constituição; II - a eleição deverá ser convocada por edital, com antecedência mínima de quinze dias, o qual deverá ser afixado na empresa, com ampla publicidade, para inscrição de candidatura, independentemente de filiação sindical, garantido o voto secreto, sendo eleito o empregado mais votado daquela empresa, cuja posse ocorrerá após a conclusão da apuração do escrutínio, que será lavrada em ata e arquivada na empresa e no sindicato representativo da categoria; e III - o mandato terá duração de dois anos, permitida uma reeleição, vedada a dispensa arbitrária ou sem justa causa, desde o registro de sua candidatura até seis meses após o final do mandato.",
@@ -68,7 +63,7 @@ angular.module("Clt").controller("Main", function($scope, $window){
     {
       num: '611-A',
       antigo:{
-        descricao: "",
+        descricao: "Artigo Inexistente",
         paragrafos: []},
       novo:{
         descricao: "A convenção ou o acordo coletivo de trabalho tem força de lei quando dispuser sobre: I -parcelamento de período de férias anuais em até três vezes, com pagamento proporcional às parcelas, de maneira que uma das frações necessariamente corresponda a, no mínimo, duas semanas ininterruptas de trabalho; II - pacto quanto à de cumprimento da jornada de trabalho, limitada a duzentas e vinte horas mensais; III - participação nos lucros e resultados da empresa, de forma a incluir seu parcelamento no limite dos prazos do balanço patrimonial e/ou dos balancetes legalmente exigidos, não inferiores a duas parcelas; IV - horas in itinere; V - intervalo intrajornada, respeitado o limite mínimo de trinta minutos; VI - ultratividade da norma ou do instrumento coletivo de trabalho da categoria; VII - adesão ao Programa de Seguro - Emprego - PSE , de que trata a  Lei  nº 13.189, de 19 de novembro de 2015; VIII - plano de cargos e salários; IX - regulamento empresarial;X - banco  de horas, garantida a conversão da hora que exceder a jornada normal de  trabalho com acréscimo de, no mínimo, cinquenta por cento; XI - trabalho remoto; XII - remuneração por produtividade, incluídas as gorjetas percebidas pelo empregado; e XIII - registro de jornada de trabalho.",

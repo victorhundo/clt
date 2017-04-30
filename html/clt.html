@@ -1,0 +1,47 @@
+<div layout="column" ng-repeat="artigo in artigos">
+  <div flex style="text-align:center; margin-bottom:-20px;">
+    <md-button class="md-fab md-primary" ng-bind="artigo.num + 'º'"></md-button>
+  </div>
+  <div flex>
+  <div layout="row">
+      <!-- Leis em vigor !-->
+      <div flex style="background-color:#84c6f6; padding: 10px; text-align:center;">
+        <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Descrição</span>
+            <span class="md-subhead" ng-bind="artigo.antigo.descricao"></span>
+          </md-card-title-text>
+        </md-card-title>
+        </md-card>
+        <md-card ng-repeat="paragrafo in artigo.antigo.paragrafos">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Parágrafo {{$index + 1}}º</span>
+            <span class="md-subhead">{{paragrafo.descricao}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        </md-card>
+      </div>
+      <!-- Leis com a reforma !-->
+      <div flex style="background-color:#6dacda; padding: 10px; text-align:center;">
+        <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Descrição</span>
+            <span class="md-subhead" ng-bind="artigo.novo.descricao"></span>
+          </md-card-title-text>
+        </md-card-title>
+        </md-card>
+        <md-card ng-repeat="paragrafo in artigo.novo.paragrafos">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Parágrafo {{$index + 1}}º</span>
+            <span class="md-subhead">{{paragrafo.descricao}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        </md-card>
+      </div>
+    </div>
+    </div>
+</div>

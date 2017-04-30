@@ -14,45 +14,25 @@
   <!-- Your application bootstrap  -->
   <script src="./js/app.js"></script>
   <script src="./js/controllers/main.js"></script>
+  <script src="./js/controllers/provisorio.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/custom-style.css">
 </head>
-<body ng-app="Clt" ng-cloak ng-controller="Main">
+<body ng-app="Clt" ng-cloak >
 <div class="hero-image">
   <div class="hero-text">
     <h1>Reforma Trabalhista</h1>
     <p>Veja o comparativo de mudanças nos artigos da CLT caso a proposta da reforma passe</p>
   </div>
 </div>
-
-  <div layout="column" ng-repeat="artigo in artigos">
-  <div flex style="text-align:center; margin-bottom:-20px;">
-    <md-button class="md-fab md-primary" ng-bind="artigo.num + 'º'"></md-button>
-  </div>
-  <div flex>
-    <div layout="row" >
-      <div flex>
-        <div layout="row" style="text-align:center;">
-          <div flex style="background-color:#84c6f6; padding: 10px;">
-            <p ng-bind="artigo.antigo.descricao"></p>
-            <md-card ng-repeat="paragrafo in artigo.antigo.paragrafos">
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">Parágrafo {{$index + 1}}º</span>
-                <span class="md-subhead">{{paragrafo.descricao}}</span>
-              </md-card-title-text>
-          </md-card>
-          </div>
-          <div flex style="background-color:#6dacda; padding: 10px;">
-            <p>{{artigo.novo.descricao}}</p>
-            <md-card ng-repeat="paragrafo in artigo.novo.paragrafos">
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">Parágrafo {{$index + 1}}º</span>
-                <span class="md-subhead">{{paragrafo.descricao}}</span>
-              </md-card-title-text>
-          </md-card>
-          </div>
-  </div>
-</div>
+<md-content>
+  <md-tabs md-dynamic-height md-border-bottom>
+    <md-tab label="CLT">
+      <md-content class="md-padding" ng-include="'./html/clt.html'" ng-controller="Clt"></md-content>
+    </md-tab>
+    <md-tab label="Trabalho Temporário">
+      <md-content class="md-padding" ng-include="'./html/t-provisorio.html'" ng-controller="Provisorio"></md-content>
+    </md-tab>
+  </md-tabs>
+</md-content>
 </body>
 </html>
