@@ -176,5 +176,5 @@ angular.module("Clt").controller("Clt", function($scope, $window){
         $scope.clt.push($scope.artigos[count++]);
     }
   };
-  
+
 });

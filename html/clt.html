@@ -1,7 +1,7 @@
 <div infinite-scroll='loadMore()' infinite-scroll-distance='2'>
 <div layout="column" ng-repeat="artigo in clt">
   <div flex style="text-align:center; margin-bottom:-20px;">
-    <md-button class="md-fab md-primary" ng-bind="artigo.num + 'º'"></md-button>
+    <md-button class="md-fab md-primary" ng-bind="artigo.num + 'º'" aria-label="N. Artigo"></md-button>
   </div>
   <div flex>
   <div layout="row">
