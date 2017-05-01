@@ -1,5 +1,7 @@
 angular.module("Clt").controller("Clt", function($scope, $window){
 
+
+
   $scope.artigos = [
     {
       num: '47',
@@ -165,4 +167,14 @@ angular.module("Clt").controller("Clt", function($scope, $window){
         ]}
     },
   ]
+
+  $scope.clt = [];
+  var count = 0;
+  $scope.loadMore = function() {
+    for(var i = 1; i <= 3; i++) {
+      if(count < $scope.artigos.length)
+        $scope.clt.push($scope.artigos[count++]);
+    }
+  };
+  
 });

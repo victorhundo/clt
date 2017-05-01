@@ -112,4 +112,14 @@ angular.module("Clt").controller("Provisorio", function($scope, $window){
         ]}
     },
   ]
+
+  $scope.provisorio = [];
+  var count = 0;
+  $scope.loadMore = function() {
+    for(var i = 1; i <= 3; i++) {
+      if(count < $scope.artigos.length)
+        $scope.provisorio.push($scope.artigos[count++]);
+    }
+  };
+
 });
