@@ -48,6 +48,68 @@ angular.module("Clt").controller("Clt", function($scope, $window){
         ]}
     },
     {
+      num: '59',
+      antigo:{
+        descricao: "A duração normal do trabalho poderá ser acrescida de horas suplementares, em número não excedente de 2 (duas), mediante acordo escrito entre empregador e empregado, ou mediante contrato coletivo de trabalho.",
+        paragrafos: [
+          { descricao: "Do acordo ou do contrato coletivo de trabalho deverá constar, obrigatoriamente, a importância da remuneração da hora suplementar, que será, pelo menos, 20% (vinte por cento) superior à da hora normal."},
+          { descricao: "Poderá ser dispensado o acréscimo de salário se, por força de acordo ou convenção coletiva de trabalho, o excesso de horas em um dia for compensado pela correspondente diminuição em outro dia, de maneira que não exceda, no período máximo de um ano, à soma das jornadas semanais de trabalho previstas, nem seja ultrapassado o limite máximo de dez horas diárias."},
+          { descricao: "Na hipótese de rescisão do contrato de trabalho sem que tenha havido a compensação integral da jornada extraordinária, na forma do parágrafo anterior, fará o trabalhador jus ao pagamento das horas extras não compensadas, calculadas sobre o valor da remuneração na data da rescisão. "},
+          { descricao: "Os empregados sob o regime de tempo parcial não poderão prestar horas extras."},
+        ]},
+      novo:{
+        descricao: "A duração normal do trabalho poderá ser acrescida de horas suplementares, em número não excedente de 2 (duas), mediante acordo escrito entre empregador e empregado, ou mediante contrato coletivo de trabalho.",
+        paragrafos: [
+          { descricao: "Do acordo ou do contrato coletivo de trabalho deverá constar, obrigatoriamente, a importância da remuneração da hora suplementar, que será, pelo menos, 20% (vinte por cento) superior à da hora normal."},
+          { descricao: "Poderá ser dispensado o acréscimo de salário se, por força de acordo ou convenção coletiva de trabalho, o excesso de horas em um dia for compensado pela correspondente diminuição em outro dia, de maneira que não exceda, no período máximo de um ano, à soma das jornadas semanais de trabalho previstas, nem seja ultrapassado o limite máximo de dez horas diárias."},
+          { descricao: "Na hipótese de rescisão do contrato de trabalho sem que tenha havido a compensação integral da jornada extraordinária, na forma do parágrafo anterior, fará o trabalhador jus ao pagamento das horas extras não compensadas, calculadas sobre o valor da remuneração na data da rescisão. "},
+          { descricao: "REVOGADO."},
+        ]}
+    },
+    {
+      num: '130-A',
+      antigo:{
+        descricao: "Na modalidade do regime de tempo parcial, após cada período de doze meses de vigência do contrato de trabalho, o empregado terá direito a férias, na seguinte proporção: I - dezoito dias, para a duração do trabalho semanal superior a vinte e duas horas, até vinte e cinco horas; II - dezesseis dias, para a duração do trabalho semanal superior a vinte horas, até vinte e duas horas;  III - quatorze dias, para a duração do trabalho semanal superior a quinze horas, até vinte horas;  IV - doze dias, para a duração do trabalho semanal superior a dez horas, até quinze horas;  V - dez dias, para a duração do trabalho semanal superior a cinco horas, até dez horas;  VI - oito dias, para a duração do trabalho semanal igual ou inferior a cinco horas.",
+        paragrafos: [
+          { descricao: "O empregado contratado sob o regime de tempo parcial que tiver mais de sete faltas injustificadas ao longo do período aquisitivo terá o seu período de férias reduzido à metade."}
+        ]},
+      novo:{
+        descricao: "Artigo REVOGADO.",
+        paragrafos: []}
+    },
+    {
+      num: '134',
+      antigo:{
+        descricao: "As férias serão concedidas por ato do empregador, em um só período, nos 12 (doze) meses subseqüentes à data em que o empregado tiver adquirido o direito.",
+        paragrafos: [
+          { descricao: "Somente em casos excepcionais serão as férias concedidas em 2 (dois) períodos, um dos quais não poderá ser inferior a 10 (dez) dias corridos."},
+          { descricao: "Aos menores de 18 (dezoito) anos e aos maiores de 50 (cinqüenta) anos de idade, as férias serão sempre concedidas de uma só vez."},
+        ]},
+      novo:{
+        descricao: "As férias serão concedidas por ato do empregador, em um só período, nos 12 (doze) meses subseqüentes à data em que o empregado tiver adquirido o direito.",
+        paragrafos: [
+          { descricao: "Somente em casos excepcionais serão as férias concedidas em 2 (dois) períodos, um dos quais não poderá ser inferior a 10 (dez) dias corridos."},
+          { descricao: "REVOGADO."},
+        ]}
+    },
+    {
+      num: '143',
+      antigo:{
+        descricao: "É facultado ao empregado converter 1/3 (um terço) do período de férias a que tiver direito em abono pecuniário, no valor da remuneração que lhe seria devida nos dias correspondentes.",
+        paragrafos: [
+          { descricao: "O abono de férias deverá ser requerido até 15 (quinze) dias antes do término do período aquisitivo."},
+          { descricao: "Tratando-se de férias coletivas, a conversão a que se refere este artigo deverá ser objeto de acordo coletivo entre o empregador e o sindicato representativo da respectiva categoria profissional, independendo de requerimento individual a concessão do abono."},
+          { descricao: "O disposto neste artigo não se aplica aos empregados sob o regime de tempo parcial."},
+        ]},
+      novo:{
+        descricao: "É facultado ao empregado converter 1/3 (um terço) do período de férias a que tiver direito em abono pecuniário, no valor da remuneração que lhe seria devida nos dias correspondentes.",
+        paragrafos: [
+          { descricao: "O abono de férias deverá ser requerido até 15 (quinze) dias antes do término do período aquisitivo."},
+          { descricao: "Tratando-se de férias coletivas, a conversão a que se refere este artigo deverá ser objeto de acordo coletivo entre o empregador e o sindicato representativo da respectiva categoria profissional, independendo de requerimento individual a concessão do abono."},
+          { descricao: "REVOGADO."},
+        ]}
+    },
+    {
       num: '523-A',
       antigo:{
         descricao: "Artigo Inexistente",
